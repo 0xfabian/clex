@@ -39,8 +39,6 @@ struct Lexer
                 return create_token(str);
             }
 
-            bool p = process_char(c);
-
             if (!process_char(c))
             {
                 if (str.empty())
